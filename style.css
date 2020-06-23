@@ -1,0 +1,314 @@
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+
+body {
+	background: #f1f1f1;
+	font-family: century gothic;
+}
+
+header {
+	text-align: center;
+	height: 80px;
+	width: 100%;
+	background: #3C0860;
+}
+
+header h1{
+	padding: 15px 0;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 2.5rem;
+	letter-spacing: 3px;
+	color: #FFF;
+}
+
+
+.banner {
+	background: url(img/guitar1.jpg) no-repeat;
+	height: 450px;
+	background-size: cover;
+	background-position: center;
+
+}
+
+.banner .banner-content {
+	position: relative;
+	text-align: center;
+	background: rgba(0,0,0,0.4);
+	height: 450px;
+	color: #fff;
+}
+
+.banner .banner-content h1 {
+	font-size: 3rem;
+	padding: 100px 0 20px;
+	font-weight: 500;
+}
+
+.banner .banner-content h3 {
+	font-weight: 500;
+	letter-spacing: 1px;
+	font-size: 1.5rem;
+	width: 900px;
+	margin:5px 0 70px 15%;
+}
+
+
+.banner .banner-content i{
+	margin-left: 48%;
+	background: #FFF;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	width: 50px;
+	color: #3c085f;
+	height: 50px;
+	animation: move 1s infinite alternate;
+}
+
+ @keyframes move {
+        from {
+            transform: translateY(0px);
+        }
+        to {
+            transform: translateY(20px);
+        }
+    }
+
+
+.container-info{
+	position: relative;
+	display: flex;
+	background: #fff;
+	padding: 50px 70px 20px;
+}
+
+.container-info img {
+	height: 650px;
+}
+.container-info .info-content {
+	width: 600px;
+	margin-right: 50px;
+}
+
+.container-info .info-content h2 {
+	padding: 50px 0 30px;
+	font-size: 2.8rem;
+	font-weight: 700;
+	color: #3c085f;
+}
+.container-info .info-content p{
+	text-align: justify;
+	font-size: 1.1rem;
+	line-height: 1.5rem;
+	letter-spacing: .5px;
+}
+
+
+.container-work {
+	position: relative;
+	background-color: #222;
+	padding-bottom: 30px;
+}
+
+.container-work .work-content {
+	text-align: center;
+	color: #999;
+}
+
+.container-work h2{
+	color: #fff;
+	padding: 50px 0 30px;
+	text-align: center;
+	font-size: 3rem;
+}
+
+.container-box
+{
+	
+	position: relative;
+	max-width: 100%;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+	grid-template-rows: minmax(100px, auto);
+	margin: 40px;
+	grid-auto-flow: dense;
+	grid-gap: 10px;
+}
+
+.container-box .box {
+	background: #333;
+	padding: 20px;
+	display: grid;
+	font-size: 20px;
+	place-item: center;
+	text-align: center;
+	color: #fff;
+	transition: .5s ease;
+}
+
+
+.container-box .box h1 {
+	font-size: 3rem;
+	padding-top: 30px;
+}
+.container-box .box h3 {
+	font-size: 2rem;
+}
+.container-box .box h4 {
+	font-size: 1.5rem;
+}
+
+.container-box .box p{
+	visibility: hidden;
+
+}
+.container-box .box:hover
+{
+	background:#e91e63;
+}
+
+
+.container-box .box:hover p{
+	visibility: visible;
+	margin-top: -150px;
+}
+
+.container-box .box:hover h1,
+.container-box .box:hover h3,
+.container-box .box:hover h4
+{
+	visibility: hidden;
+}
+.container-box .box i
+{
+
+	position: relative;
+	max-width: 100px;
+	margin-bottom: 10px;
+}
+
+.container-box .box:nth-child(5)
+{
+	grid-column: span 2;
+	grid-row: span 1;
+
+}
+
+.container-skills {
+	position: relative;
+	width: 100%;
+}
+
+.container-skills h1 {
+	padding: 50px 0 30px;
+	text-align: center;
+	font-size: 3rem;
+	text-transform: uppercase;
+}
+
+.container-skills .skill-box {
+	position: relative;
+	width: 90%;
+	display: flex;
+	padding-left: 60px;
+}
+
+
+.container-skills .skill-box2 {
+	position: relative;
+	width: 80%;
+	display: flex;
+	padding-left: 200px;
+} 
+
+.container-skills .skill-box .sboxes{
+	text-align: center;
+	width: 350px;
+	margin:20px; 
+	background: #fff;
+	padding: 5px;
+	height: 300px;
+	border-radius: 10px;
+	box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
+}
+
+.container-skills .skill-box .sboxes i {
+	font-size: 100px;
+	padding: 30px 0 10px;
+	color: #333;
+}
+
+.container-skills .skill-box .sboxes h2 {
+	font-size: 1.5rem;
+	padding: 0px 0 10px;
+}
+
+.container-skills .skill-box .sboxes p {
+	font-size:1.3rem;
+	
+}
+
+.container-skills .skill-box2 .sboxes{
+	text-align: center;
+	width: 350px;
+	margin:20px; 
+	background: #fff;
+	padding: 5px;
+	height: 300px;
+	border-radius: 10px;
+	box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
+}
+
+.container-skills .skill-box2 .sboxes i {
+	font-size: 100px;
+	padding: 30px 0 10px;
+	color: #333;
+}
+
+.container-skills .skill-box2 .sboxes h2 {
+	font-size: 1.5rem;
+	padding: 0px 0 10px;
+}
+
+.container-skills .skill-box2 .sboxes p {
+	font-size:1.3rem;
+	
+}
+
+footer {
+	position: relative;
+	background-color: #222;
+	color: #999;
+	height: 50px;
+
+}
+
+.container-footer {
+	position: relative;
+	display: flex;
+	align-items: center
+}
+.container-footer p {
+	font-size: 18px;
+}
+
+.container-footer .follow{
+	display: inline-flex;
+	margin-left: 600px;
+	padding: 15px 0 0 50px;
+}
+
+.container-footer .f-content {
+	padding: 15px 0 0 50px;
+}
+
+.container-footer .follow i {
+	font-size: 20px;
+	padding-left: 10px;
+}
